@@ -3,3 +3,5 @@ allowBuilds:
   vue-demi: true
 overrides:
   slimsearch: 2.1.1
+patchedDependencies:
+  vuepress-plugin-search-pro@2.0.0-rc.24: patches/vuepress-plugin-search-pro@2.0.0-rc.24.patch

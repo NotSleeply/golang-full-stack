@@ -26,7 +26,7 @@ export default hopeTheme({
   plugins: {
     searchPro: {
       indexContent: true,
-      autoSuggestions: true,
+      autoSuggestions: false,
       indexOptions: {
         tokenize: (text) => {
           const tokens: string[] = [];
@@ -41,6 +41,14 @@ export default hopeTheme({
               }
             } else {
               tokens.push(trimmed.toLowerCase());
+            }
+          }
+          // 保留带符号的技术词（如 B+、C++、net/http），对齐 worker 端分词
+          const techTerms = text.match(/[a-zA-Z0-9][a-zA-Z0-9_+.#/-]*/g);
+          if (techTerms) {
+            for (const term of techTerms) {
+              const lower = term.replace(/[./-]+$/, "").toLowerCase();
+              if (lower && !tokens.includes(lower)) tokens.push(lower);
             }
           }
           return tokens;
