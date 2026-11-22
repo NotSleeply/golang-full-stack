@@ -7,7 +7,6 @@ categories: "图解网络"
 
 ![](https://cdn.xiaobaidebug.top/image/2021-2-19/1613693230446-%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B61613437659307.png)
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获免费面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 <img src="https://cdn.xiaobaidebug.top/image/2021-2-14/1613317170976-%E4%B8%8D%E8%A6%81%E6%89%93%E6%89%B0%E6%88%91%E5%AD%A6HTTP.jpg" style="zoom:100%" />
 
@@ -521,18 +520,6 @@ Etag 是 Entity tag 的缩写，是服务端的一个资源版本的令牌标识
 - 否则表示资源已经更新，浏览器需要下载新版本以提供给用户。
 
 此过程可确保用户始终获得资源的最新版本，并且无需进行不必要的下载。
-
-# 最后
-
-看个猫片都能学到这么多硬核知识。接下来我打算去舞蹈区看看有没有适合你们的知识点。
-
-<img src="https://cdn.xiaobaidebug.top/image/2021-2-14/1613314979045-%E8%84%B8%E7%BA%A2%E5%BC%80%E5%BF%83.jpg" style="zoom:100%" />
-
-我是小白，有空？一起在知识的海洋里呛水啊，懂我意思？
-
-<img src="https://cdn.xiaobaidebug.top/image/2021-1-10/1610269930614-640.png" style="zoom:100%" />
-
-<img src="https://cdn.xiaobaidebug.top/1696069689495.png" style="zoom:100%" />
 
 # 参考资料
 

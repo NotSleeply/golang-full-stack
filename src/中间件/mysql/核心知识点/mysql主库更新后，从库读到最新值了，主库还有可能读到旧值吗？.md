@@ -237,35 +237,21 @@ SET GLOBAL TRANSACTION ISOLATION LEVEL REPEATABLE-READ;
 
 那么问题又来了，这四个隔离级别是挺骚气的，那他们是怎么实现的呢？
 
-![](https://cdn.xiaobaidebug.top/image/1597215709606.gif)
 
 <br>
-
-**如果文章对你有帮助，欢迎.....**
-
-算了。
-
-<br>
-
-###### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
 
 
 <br>
 
-不满足于在留言区说骚话？
 
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" width = "50%"   align=center />
+<br>
 
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)

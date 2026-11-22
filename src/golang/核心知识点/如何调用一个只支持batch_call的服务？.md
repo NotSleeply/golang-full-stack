@@ -5,7 +5,6 @@ tags:
 categories: "golang面试题"
 ---
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获免费面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 我们先来说下标题是什么意思。
 
@@ -307,44 +306,21 @@ func CallAPI() error {
 
 ---
 
-最近原创更文的阅读量稳步下跌，思前想后，夜里辗转反侧。
-
-我有个不成熟的请求。
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162506224.png" alt="" style="zoom:20%;" />
 
 <br>
-
-**离开广东好长时间了，好久没人叫我靓仔了。**
-
-大家可以在**评论区**里，叫我一靓仔吗？
-
-我这么善良质朴的愿望，能被满足吗？
-
-如果实在叫不出口的话，能帮我点下右下角的**点赞和在看**吗？
-
-<br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
 
 
 <br>
 
-不满足于在留言区说骚话？
 
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
+<br>
 
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi.gif)
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)

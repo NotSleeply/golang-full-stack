@@ -5,7 +5,6 @@ tags:
 categories: "golang面试题"
 ---
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获免费面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 ## GM 模型是什么
 
@@ -57,9 +56,6 @@ categories: "golang面试题"
 
 主要还是因为`M`其实是**内核**线程，内核只知道自己在跑线程，而`golang`的运行时（包括调度，垃圾回收等）其实都是**用户空间**里的逻辑。操作系统内核哪里还知道，也不需要知道用户空间的 golang 应用原来还有那么多花花肠子。这一切逻辑交给应用层自己去做就好，毕竟改内核线程的逻辑也不合适啊。
 
-> 如果文章对你有帮助，看下文章底部右下角，做点正能量的事情（**点两下**）支持一下。（**疯狂暗示，拜托拜托，这对我真的很重要！**）
-
-我是小白，我们下期见。
 
 ## 参考资料
 
@@ -71,19 +67,14 @@ categories: "golang面试题"
 
 ## 文章推荐：
 
-- [i/o timeout，希望你不要踩到这个 net/http 包的坑](https://golangguide.top/golang/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%8A%A8%E5%9B%BE%E5%9B%BE%E8%A7%A3%EF%BC%8CGMP%E9%87%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89P.html)
+- [i/o timeout，希望你不要踩到这个 net/http 包的坑](/golang/核心知识点/io_timeout，希望你不要踩到这个http包的坑.md)
 
-- [给大家丢脸了，用了三年 golang，我还是没答对这道内存泄漏题](https://golangguide.top/golang/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%BB%99%E5%A4%A7%E5%AE%B6%E4%B8%A2%E8%84%B8%E4%BA%86%EF%BC%8C%E7%94%A8%E4%BA%86%E4%B8%89%E5%B9%B4golang%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E6%B2%A1%E7%AD%94%E5%AF%B9%E8%BF%99%E9%81%93%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%A2%98.html)
+- [给大家丢脸了，用了三年 golang，我还是没答对这道内存泄漏题](/golang/核心知识点/给大家丢脸了，用了三年golang，我还是没答对这道内存泄漏题.md)
 
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
-##### 别说了，关注公众号:【小白 debug】，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
-
+- [golang学习路线](/golang/学习路线.md)

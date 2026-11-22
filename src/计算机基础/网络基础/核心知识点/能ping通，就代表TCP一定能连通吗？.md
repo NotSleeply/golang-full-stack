@@ -5,7 +5,6 @@ tags:
 categories: "图解网络"
 ---
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 <br>
 
@@ -37,7 +36,7 @@ categories: "图解网络"
 
 <br>
 
-我之前写过一篇[《断网了，还能 ping 通 127.0.0.1 吗？》](https://mp.weixin.qq.com/s/Gml_xxvGjq224L7zCoXm5w),里面提到过**ping 数据包和 tcp 数据包的区别**。
+我之前写过一篇[《断网了，还能 ping 通 127.0.0.1 吗？》](/计算机基础/网络基础/核心知识点/硬核图解！断网了，还能ping通回环地址吗？为什么.md),里面提到过**ping 数据包和 tcp 数据包的区别**。
 
 ![ping和TCP发消息的区别](https://cdn.xiaobaidebug.top/ping%E5%92%8C%E6%99%AE%E9%80%9A%E5%8F%91%E6%B6%88%E6%81%AF%E7%9A%84%E5%85%B3%E7%B3%BB67.drawio.png)
 
@@ -319,39 +318,18 @@ nc -p 6666 baidu.com 80
 
 兄弟们。
 
-按照惯例，我应该在这里唯唯诺诺的求大家叫我两声**靓仔**的。
-
-但我今天不想。
-
-因为越是这样，评论区里叫我 diao 毛的兄弟就越多。
-
-**上海快 40° 的天气，你们竟然能说出如此冰冷的话。**
 
 但是。
 
-只要你们还能给我文章右下角来个**点赞和在看**的话。
-
-这口气，我还能忍。
 
 <br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
 
 
 <br>
 
-不满足于在留言区说骚话？
-
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi-20220806162638482.gif)
 
 ## 文章推荐：
 
-- [既然有 HTTP 协议，为什么还要有 RPC](https://www.xiaobaidebug.top/2022/07/19/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/%E6%97%A2%E7%84%B6%E6%9C%89HTTP%E5%8D%8F%E8%AE%AE%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E6%9C%89RPC%E5%8D%8F%E8%AE%AE%EF%BC%9F/)
-- [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](https://www.xiaobaidebug.top/2021/03/26/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/TCP%E7%B2%98%E5%8C%85%EF%BC%81%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%9A%E6%88%91%E5%8F%AA%E6%98%AF%E7%8A%AF%E4%BA%86%E6%AF%8F%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%8C%85%E9%83%BD%E4%BC%9A%E7%8A%AF%E7%9A%84%E9%94%99%EF%BC%8C%E7%A1%AC%E6%A0%B8%E5%9B%BE%E8%A7%A3/)
-- [动图图解！既然 IP 层会分片，为什么 TCP 层也还要分段？](https://www.xiaobaidebug.top/2021/05/25/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/%E5%8A%A8%E5%9B%BE%E5%9B%BE%E8%A7%A3%EF%BC%81%E6%97%A2%E7%84%B6IP%E5%B1%82%E4%BC%9A%E5%88%86%E7%89%87%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88TCP%E5%B1%82%E4%B9%9F%E8%BF%98%E8%A6%81%E5%88%86%E6%AE%B5%EF%BC%9F/)
+- [既然有 HTTP 协议，为什么还要有 RPC](/计算机基础/网络基础/核心知识点/既然有HTTP协议，为什么还要有RPC协议？.md)
+- [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](/计算机基础/网络基础/核心知识点/TCP粘包！数据包：我只是犯了每个数据包都会犯的错，硬核图解.md)
+- [动图图解！既然 IP 层会分片，为什么 TCP 层也还要分段？](/计算机基础/网络基础/核心知识点/动图图解！既然IP层会分片，为什么TCP层也还要分段？.md)

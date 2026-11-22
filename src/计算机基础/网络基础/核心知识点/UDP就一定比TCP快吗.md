@@ -5,7 +5,6 @@ tags:
 categories: "图解网络"
 ---
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 话说，**UDP 比 TCP 快吗？**
 
@@ -238,49 +237,8 @@ TCP 通过上面提到的各种机制实现了数据的可靠性。这些机制�
 
 <br>
 
-## 最后
-
-最近原创更文的阅读量稳步下跌，思前想后，夜里辗转反侧。
-
-我有个不成熟的请求。
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162506224.png" alt="" style="zoom:20%;" />
-
-<br>
-
-**离开广东好长时间了，好久没人叫我靓仔了。**
-
-大家可以在**评论区**里，叫我一靓仔吗？
-
-我这么善良质朴的愿望，能被满足吗？
-
-如果实在叫不出口的话，能帮我**点下关注**和右下角的**点赞+收藏**吗？
-
-如果评论区没人叫我靓仔，文章也没人点赞，我感觉我下篇文章要开始收费了，价钱我都想好了，8 块 8，毕竟男人都拒绝不了这种价格以 8 结尾的项目。
-
-你说是吧，易峰。
-
-<br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
-
-
-<br>
-
-不满足于在留言区说骚话？
-
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi.gif)
-
-<br>
-
 ## 文章推荐：
 
-- [既然有 HTTP 协议，为什么还要有 RPC](https://www.xiaobaidebug.top/2022/07/19/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/%E6%97%A2%E7%84%B6%E6%9C%89HTTP%E5%8D%8F%E8%AE%AE%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E6%9C%89RPC%E5%8D%8F%E8%AE%AE%EF%BC%9F/)
-- [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](https://www.xiaobaidebug.top/2021/03/26/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/TCP%E7%B2%98%E5%8C%85%EF%BC%81%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%9A%E6%88%91%E5%8F%AA%E6%98%AF%E7%8A%AF%E4%BA%86%E6%AF%8F%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%8C%85%E9%83%BD%E4%BC%9A%E7%8A%AF%E7%9A%84%E9%94%99%EF%BC%8C%E7%A1%AC%E6%A0%B8%E5%9B%BE%E8%A7%A3/)
-- [动图图解！既然 IP 层会分片，为什么 TCP 层也还要分段？](https://www.xiaobaidebug.top/2021/05/25/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C/%E5%8A%A8%E5%9B%BE%E5%9B%BE%E8%A7%A3%EF%BC%81%E6%97%A2%E7%84%B6IP%E5%B1%82%E4%BC%9A%E5%88%86%E7%89%87%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88TCP%E5%B1%82%E4%B9%9F%E8%BF%98%E8%A6%81%E5%88%86%E6%AE%B5%EF%BC%9F/)
+- [既然有 HTTP 协议，为什么还要有 RPC](/计算机基础/网络基础/核心知识点/既然有HTTP协议，为什么还要有RPC协议？.md)
+- [TCP 粘包 数据包：我只是犯了每个数据包都会犯的错 |硬核图解](/计算机基础/网络基础/核心知识点/TCP粘包！数据包：我只是犯了每个数据包都会犯的错，硬核图解.md)
+- [动图图解！既然 IP 层会分片，为什么 TCP 层也还要分段？](/计算机基础/网络基础/核心知识点/动图图解！既然IP层会分片，为什么TCP层也还要分段？.md)

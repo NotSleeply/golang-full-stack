@@ -20,7 +20,6 @@
 ![mysql是数据和应用的中间层](https://cdn.xiaobaidebug.top/mysql%E6%98%AF%E4%BB%80%E4%B9%88%E9%85%8D%E5%9B%BE.002.jpeg)
 
 
-
   
 
 ## 什么是 mysql
@@ -195,7 +194,6 @@ excel 文件在磁盘上是个**xls** 文件，mysql 的数据表也类似，在
 ![顺序写比随机写快很多](https://cdn.xiaobaidebug.top/mysql%E6%98%AF%E4%BB%80%E4%B9%88%E9%85%8D%E5%9B%BE.0211.jpeg)
 
 
-
 但问题又来了，redo log buffer 也是内存，buffer pool 也是内存，如果 redo log buffer 里的数据还没来得及写入到 redo log，数据库进程就崩了，那 redo log buffer 里的数据不也丢了吗？
 
 是的，所以 redo log 的作用并不是保证所有数据不丢失，而是确保已提交事务的变更不会丢失。但因为 redo log 刷盘频率很高，所以丢失数据的概率很低。
@@ -311,15 +309,12 @@ excel 文件在磁盘上是个**xls** 文件，mysql 的数据表也类似，在
 - mysql server 层会通过 binlog 记录数据库变更操作，binlog 可以用于数据恢复，也可以用于主从同步等场景。
     
 
-如果你觉得这篇文章对你有帮助，记得转发给你那不成器的兄弟。最后遗留一个问题，你听说过 HDFS 吗？你知道它的架构是怎么样的吗？如果你感兴趣，记得关注，我会在下期聊聊这个话题。我们下期见！
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
-- [基于golang实现的图片翻译工具](https://www.photo-translate.top)
+- [golang学习路线](/golang/学习路线.md)

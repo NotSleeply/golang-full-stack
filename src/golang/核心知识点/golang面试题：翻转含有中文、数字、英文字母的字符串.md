@@ -42,15 +42,12 @@ func reverse(s []rune) []rune {
 - 由于 rune 可表示的范围更大，所以能处理一切字符，当然也包括**中文字符**。在平时计算中文字符，可用 rune。
 - 因此将`字符串`转为`rune的切片`，再进行翻转，完美解决。
 
-##### 关注公众号:【小白 debug】
-
-
 
 ## 相关文章
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)

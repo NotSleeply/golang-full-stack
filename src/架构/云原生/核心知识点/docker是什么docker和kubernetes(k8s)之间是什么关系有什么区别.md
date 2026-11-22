@@ -1,7 +1,5 @@
 # Docker 是什么？ 和 Kubernetes(k8s) 之间是什么关系？
 
-![八股文刷题网站: https://golangguide.top](https://cdn.xiaobaidebug.top/1711635876652.png)
-
 作为一个程序员，如果你想安装一个 `vim` 编辑下文本，在不同环境里你得执行不同的命令。 在 ubuntu，你需要执行 `apt-get install vim`，在 centos 里，你需要执行 `yum install vim`.
 
 装个小软件尚且如此，要是你想将自己写的代码部署到各个不同操作系统的服务器上，那依赖的软件和配置就更多了，需要针对每个环境单独写一套部署脚本。  
@@ -230,14 +228,12 @@ Docker Compose 基于多个 container 创建的**一整套服务**，其实就�
 ## 最后
 
 这篇文章的主题按理说写个万把字不成问题，但我压缩了很多内容，因为后面会做成视频，所以主打就是用最少的文字将技术原理通俗的讲清楚。
-如果对你有帮助，可以在评论区叫我一声靓仔吗？没别的意思，我就是离开广东太久了，想再听一次。
 
 # 参考文章：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
+- [golang学习路线](/golang/学习路线.md)

@@ -69,7 +69,7 @@ func main() {
 
 # 再补一句
 
-[上篇文章](https://mp.weixin.qq.com/s?__biz=MzAwMDAxNjU4Mg==&mid=2247483698&idx=1&sn=352a5cddf20fe95f5ec26bfc9a6de64b&chksm=9aee289bad99a18d9914d085421e4f218b18d4f0c7a24da306642816e91fb4b235be6aea0e40&token=961196008&lang=zh_CN#rd) 提到`json包`不能导出`私有变量的tag`是因为**取不到**`反射信息`的说法，但是直接取`t.Field(i).Tag.Get("json")`**却可以**获取到私有变量的`json字段`，是**为什么**呢？
+[上篇文章](/golang/核心知识点/golang面试题：json包变量不加tag会怎么样？.md) 提到`json包`不能导出`私有变量的tag`是因为**取不到**`反射信息`的说法，但是直接取`t.Field(i).Tag.Get("json")`**却可以**获取到私有变量的`json字段`，是**为什么**呢？
 
 其实**准确的**说法是，`json`包里不能导出私有变量的`tag`是因为`json`包里认为私有变量为不可导出的`Unexported`，所以**跳过获取**名为`json`的`tag`的内容。
 具体可以看`/src/encoding/json/encode.go:1070`的代码。
@@ -95,10 +95,10 @@ func typeFields(t reflect.Type) []field {
 ```
 
 # 相关文章
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)

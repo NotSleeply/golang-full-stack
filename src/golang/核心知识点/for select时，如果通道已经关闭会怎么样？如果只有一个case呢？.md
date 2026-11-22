@@ -33,8 +33,8 @@ categories: "golang面试题"
 
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9lNDlmNDE4Mi03MGQyLTQxYjAtODRjYy05M2VkMzMxYjc3YjUucG5n?x-oss-process=image/format,png)
 
-- `x, ok := <-c` 返回的值里第一个 x 是通道内的值，`ok`是指通道是否关闭，当通道被关闭后，`ok`则返回`false`，因此可以根据这个进行操作。读一个已经关闭的通道为什么会出现 false，可以看我之前的 [对已经关闭的的 chan 进行读写，会怎么样？为什么？](https://mp.weixin.qq.com/s/qm-8pvHBVRmLQQ4_DHc1Tw) 。
-- 当返回的`ok`为`false`时，执行`c = nil` 将通道置为`nil`，相当于读一个未初始化的通道，则会一直阻塞。至于为什么读一个未初始化的通道会出现阻塞，可以看我的另一篇 [对未初始化的的 chan 进行读写，会怎么样？为什么？](https://mp.weixin.qq.com/s/ixJu0wrGXsCcGzveCqnr6A) 。`select`中如果任意某个通道有值可读时，它就会被执行，其他被忽略。则`select`会跳过这个阻塞`case`，可以解决不断读已关闭通道的问题。
+- `x, ok := <-c` 返回的值里第一个 x 是通道内的值，`ok`是指通道是否关闭，当通道被关闭后，`ok`则返回`false`，因此可以根据这个进行操作。读一个已经关闭的通道为什么会出现 false，可以看我之前的 [对已经关闭的的 chan 进行读写，会怎么样？为什么？](/golang/核心知识点/golang面试题：对已经关闭的的chan进行读写，会怎么样？为什么？.md) 。
+- 当返回的`ok`为`false`时，执行`c = nil` 将通道置为`nil`，相当于读一个未初始化的通道，则会一直阻塞。至于为什么读一个未初始化的通道会出现阻塞，可以看我的另一篇 [对未初始化的的 chan 进行读写，会怎么样？为什么？](/golang/核心知识点/golang面试题：对未初始化的的chan进行读写，会怎么样？为什么？.md) 。`select`中如果任意某个通道有值可读时，它就会被执行，其他被忽略。则`select`会跳过这个阻塞`case`，可以解决不断读已关闭通道的问题。
 
 ## 3.如果 select 里只有一个已经关闭的 case，会怎么样？
 
@@ -57,11 +57,10 @@ categories: "golang面试题"
 - 如果没有`default`字句，`select`将有可能阻塞，直到某个通道有值可以运行，所以`select`里最好有一个`default`，否则将有一直阻塞的风险。
 
 # 参考文章：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
+- [golang学习路线](/golang/学习路线.md)

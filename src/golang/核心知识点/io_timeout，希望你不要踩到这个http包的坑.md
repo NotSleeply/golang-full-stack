@@ -5,7 +5,6 @@ tags:
 categories: "golang面试题"
 ---
 
-> 文章持续更新，可以微信搜一搜「小白 debug」第一时间阅读，回复【面试】获免费面试题集。本文已经收录在 GitHub https://github.com/xiaobaiTech/golangFamily , 有大厂面试完整考点和成长路线，欢迎 Star。
 
 <br>
 
@@ -174,7 +173,7 @@ TCP 连接每次都是三次握手。每次断开都要四次挥手。
 
 其实没必要每次都建立新连接，建立的连接不断开就好了，每次发送数据都复用就好了。
 
-于是乎，HTTP 协议从`1.1`之后就默认使用`长连接`。具体相关信息可以看之前的 [这篇文章](/计算机基础/网络基础/核心知识点/硬核！漫画图解HTTP知识点_面试题)。
+于是乎，HTTP 协议从`1.1`之后就默认使用`长连接`。具体相关信息可以看之前的 [这篇文章](/计算机基础/网络基础/核心知识点/硬核！漫画图解HTTP知识点_面试题.html)。
 
 那么`golang标准库`里也兼容这种实现。
 
@@ -186,7 +185,7 @@ TCP 连接每次都是三次握手。每次断开都要四次挥手。
 
 <br>
 
-> 插个题外话：这也解释了之前[这篇文章](https://golangguide.top/golang/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/%E7%BB%99%E5%A4%A7%E5%AE%B6%E4%B8%A2%E8%84%B8%E4%BA%86%EF%BC%8C%E7%94%A8%E4%BA%86%E4%B8%89%E5%B9%B4golang%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E6%B2%A1%E7%AD%94%E5%AF%B9%E8%BF%99%E9%81%93%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%A2%98.html)里最后的疑问，为什么要强调是同一个域名：一个域名会建立一个连接，一个连接对应**一个读 goroutine 和一个写 goroutine**。正因为是同一个域名，所以最后才会泄漏`3`个 goroutine，如果不同域名的话，那就会泄漏 `1+2*N` 个协程，`N`就是域名数。
+> 插个题外话：这也解释了之前[这篇文章](/golang/核心知识点/给大家丢脸了，用了三年golang，我还是没答对这道内存泄漏题.md)里最后的疑问，为什么要强调是同一个域名：一个域名会建立一个连接，一个连接对应**一个读 goroutine 和一个写 goroutine**。正因为是同一个域名，所以最后才会泄漏`3`个 goroutine，如果不同域名的话，那就会泄漏 `1+2*N` 个协程，`N`就是域名数。
 
 <br>
 
@@ -619,20 +618,12 @@ func netpolldeadlineimpl(pd *pollDesc, seq uintptr, read, write bool) {
 
 - 请求的超时在创建`client`里设置。
 
-如果文章对你有帮助，看下文章底部右下角，做点正能量的事情（**点两下**）支持一下。（**疯狂暗示，拜托拜托，这对我真的很重要！**）
-
-我是小白，我们下期见。
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:**【小白 debug】**
-
+- [golang学习路线](/golang/学习路线.md)

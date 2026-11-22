@@ -63,7 +63,6 @@ key 是商品 ID，value 是商品数据。  通过商品 ID, 就能查到商品
 完全没办法，只能交给调用方去做判断，让**用户通过 expire 命令的形式来指定哪些数据多久过期**。  
 
 
-
 ## 缓存淘汰
 
 但你不能指望每个调用方都是老实人，如果都不设置过期时间，那内存还是得炸。  
@@ -131,19 +130,14 @@ redis 作为架构中最常用的**提速**神器，是万金油一般的存在�
 
 最后遗留一个问题，redis 到目前为止就是个**单机**服务，**高性能**是有了，但**高可用**和**可扩展性**是一点没看到。  
 这就需要聊聊 **主从** 、**哨兵**和**集群**模式了，如果大家感兴趣，下期我们聊聊这个话题。  
-我们下期见！  
-
 
 
 ## 推荐阅读
 - [redis面试八股文](/中间件/redis/面试题)
 
-- [还没有offer?专注【突击面试】的【go后端开发】训练营了解一下](/训练营/介绍)
 
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
-- [基于golang实现的图片翻译工具](https://www.photo-translate.top)
+- [golang学习路线](/golang/学习路线.md)

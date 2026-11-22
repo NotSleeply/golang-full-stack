@@ -16,7 +16,7 @@
 
 ## B+树的结构
 
-之前的一篇[文章](https://mp.weixin.qq.com/s/XX_NkIIf_PLyU4IE6lEEYQ)里，已经提到过**B+树的结构**了。文章不长，如果没看过，建议先看下。
+之前的一篇[文章](/中间件/mysql/核心知识点/为什么大家说mysql数据库单表最大两千万？.md)里，已经提到过**B+树的结构**了。文章不长，如果没看过，建议先看下。
 
 **当然，不看也行。**
 
@@ -101,7 +101,7 @@ B+树本质上是一种多叉平衡二叉树。关键在于"**平衡**"这两个
 
 从上面可以看到，只有在叶子和索引结点**都满了**的情况下，B+树才会考虑加入一层新的结点。
 
-而从之前的[文章](https://mp.weixin.qq.com/s/XX_NkIIf_PLyU4IE6lEEYQ)知道，要把三层 B+树塞满，那大概需要 2kw 左右的数据。
+而从之前的[文章](/中间件/mysql/核心知识点/为什么大家说mysql数据库单表最大两千万？.md)知道，要把三层 B+树塞满，那大概需要 2kw 左右的数据。
 
 <br>
 
@@ -133,7 +133,7 @@ B+树本质上是一种多叉平衡二叉树。关键在于"**平衡**"这两个
 
 ## mysql 的索引为什么使用 B+树而不使用跳表？
 
-**B+树**是多叉树结构，每个结点都是一个 16k 的数据页，能存放较多索引信息，所以**扇出很高**。**三层**左右就可以存储`2kw`左右的数据（知道结论就行，想知道原因可以看之前的[文章](https://mp.weixin.qq.com/s/XX_NkIIf_PLyU4IE6lEEYQ)）。也就是说查询一次数据，如果这些数据页都在磁盘里，那么最多需要查询**三次磁盘 IO**。
+**B+树**是多叉树结构，每个结点都是一个 16k 的数据页，能存放较多索引信息，所以**扇出很高**。**三层**左右就可以存储`2kw`左右的数据（知道结论就行，想知道原因可以看之前的[文章](/中间件/mysql/核心知识点/为什么大家说mysql数据库单表最大两千万？.md)）。也就是说查询一次数据，如果这些数据页都在磁盘里，那么最多需要查询**三次磁盘 IO**。
 
 <br>
 
@@ -231,45 +231,21 @@ https://cloud.tencent.com/developer/article/1813695
 
 <br>
 
-最近原创更文的阅读量稳步下跌，思前想后，夜里辗转反侧。
-
-我有个不成熟的请求。
-
-![](https://cdn.xiaobaidebug.top/image/u=2281575747,3550568508&fm=253&fmt=auto&app=120&f=JPEG.jpeg)
 
 <br>
-
-**离开广东好长时间了，好久没人叫我靓仔了。**
-
-大家可以在**评论区**里，叫我一靓仔吗？
-
-我这么善良质朴的愿望，能被满足吗？
-
-如果实在叫不出口的话，能帮我点下右下角的**点赞和在看**吗？
-
-<br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白 debug】
 
 
 <br>
 
-不满足于在留言区说骚话？
 
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" width = "50%"   align=center />
-
-![](https://cdn.xiaobaidebug.top/image/006APoFYly1g5q9gn2jipg308w08wqdi.gif)
+<br>
 
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)

@@ -27,7 +27,6 @@
 ![sms建表sql](https://cdn.xiaobaidebug.top/sms%E5%BB%BA%E8%A1%A8sql.png)
 
 
-
 ![sms表](https://cdn.xiaobaidebug.top/sms%E8%A1%A8.drawio.png)
 
 需要注意的是**state字段，为0的时候说明这时候短信还未发送。**
@@ -63,7 +62,6 @@ select count(*) from sms where state = 0;
 我们先从**count()方法的原理**聊起。
 
 
-
 <br>
 
 ## count()的原理
@@ -89,7 +87,6 @@ count()方法的目的是计算当前sql语句查询得到的**非NULL的行数*
 <br>
 
 
-
 那么问题就来了。
 
 <br>
@@ -113,7 +110,6 @@ innodb引擎通过MVCC实现了**可重复隔离级别**，事务开启后，多
 对于两个事务A和B，一开始sms表假设就**2条**数据，那事务A一开始确实是读到2条数据。事务B在这期间插入了1条数据，按道理数据库其实有3条数据了，但由于可重复读的隔离级别，事务A依然还是只能读到2条数据。
 
 因此由于事务隔离级别的存在，**不同的事务在同一时间下，看到的表内数据行数是不一致的**，因此innodb，没办法，也没必要像myisam那样单纯的加个count字段信息在数据表上。
-
 
 
 那如果不可避免要使用count()，有没有办法让它快一点？
@@ -249,7 +245,6 @@ select cnt from count_table where cnt_what = "未发送的短信数量";
 ![mysql同步hive](https://cdn.xiaobaidebug.top/mysql%E5%90%8C%E6%AD%A5hive.drawio.png)
 
 
-
 <br>
 
 ## 总结
@@ -268,13 +263,11 @@ select cnt from count_table where cnt_what = "未发送的短信数量";
   
 
 
-
 <br>
 
 ## 参考资料
 
 《丁奇mysql45讲》
-
 
 
 <br>
@@ -283,7 +276,6 @@ select cnt from count_table where cnt_what = "未发送的短信数量";
 
 兄弟们，最近有点没出息，沉迷在刘亦菲的新剧里，都快忘了写文这件事了。
 
-按照惯例，我应该在这里唯唯诺诺的求大家叫我两声**靓仔**的。
 
 但今天，我感觉我不配。
 
@@ -293,67 +285,21 @@ select cnt from count_table where cnt_what = "未发送的短信数量";
 
 但右下角的点赞和再看还是可以走一波的。
 
-我是小白，我们下期见。
-
-
 
 <br>
 
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白debug】
-![](https://cdn.xiaobaidebug.top/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88.png)
 
 <br>
-
-不满足于在留言区说骚话？
-
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi.gif)
-
 
 
 <br>
 
 
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [golang学习路线](/golang/学习路线.md)

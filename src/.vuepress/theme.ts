@@ -2,52 +2,52 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
+// 复用原生中文分词器，避免引入 native addon 并兼容纯前端全文搜索
+const zhSegmenter = new Intl.Segmenter("zh-CN", { granularity: "word" });
+
 export default hopeTheme({
-  hostname: "https://golangguide.top",
-  author: {
-    name: "小白debug",
-    url: "https://xiaobaidebug.top/",
-  },
+  hostname: "https://notsleeply.github.io",
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "/new_logo.png",
 
-  repo: "xiaobaiTech/golang-full-stack",
+  repoDisplay: false,
+  editLink: false,
+  contributors: false,
+  lastUpdated: false,
+  copyright: false,
+  displayFooter: false,
+  pageInfo: ["Category", "Tag", "ReadingTime"],
 
-  docsDir: "src",
-
-  // navbar
   navbar,
-
-  // sidebar
   sidebar,
 
-  footer: "关注公众号「小白debug」,回复「面试」获面试题集pdf",
-
-  displayFooter: true,
-
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
-  // page meta
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
-  },
-
   plugins: {
-    // You should generate and use your own comment service
-    comment: {
-      provider: "Giscus",
-      repo: "xiaobaiTech/golang-full-stack",
-      repoId: "R_kgDOKcTHvw",
-      category: "Announcements",
-      categoryId: "DIC_kwDOKcTHv84CZ4fp",
+    searchPro: {
+      indexContent: true,
+      autoSuggestions: true,
+      indexOptions: {
+        tokenize: (text) => {
+          const tokens: string[] = [];
+          for (const { segment, isWordLike } of zhSegmenter.segment(text)) {
+            if (!isWordLike) continue;
+            const trimmed = segment.trim();
+            if (!trimmed) continue;
+            if (/[\u4e00-\u9fa5]/.test(trimmed)) {
+              if (trimmed.length > 1) tokens.push(trimmed);
+              for (const ch of trimmed) {
+                if (/[\u4e00-\u9fa5]/.test(ch)) tokens.push(ch);
+              }
+            } else {
+              tokens.push(trimmed.toLowerCase());
+            }
+          }
+          return tokens;
+        },
+      },
     },
-    // All features are enabled for demo, only preserve features you need here
+
     mdEnhance: {
       align: true,
       attrs: true,
@@ -83,28 +83,12 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
+
     components: {
-      components: ["Badge", "BiliBili"],
-      rootComponents: {
-        notice: [
-          {
-            path: "/",
-            title: "通知",
-            content: "关注公众号【小白debug】\n  回复【面试】获取最全面试pdf",
-            fullscreen: false,
-            showOnce: false,
-          },
-        ],
-      },
-    },
-
-
-    feed: {
-      rss: true,
+      components: ["Badge"],
     },
 
     seo: {
-      canonical: "https://golangguide.top",
       autoDescription: true,
     },
 
@@ -114,7 +98,7 @@ export default hopeTheme({
 
     pwa: {
       favicon: "/favicon.ico",
-      cacheHTML: true,
+      cacheHTML: false,
       cachePic: true,
       appendBase: true,
       apple: {
@@ -147,6 +131,7 @@ export default hopeTheme({
           {
             src: "/assets/icon/chrome-192.png",
             sizes: "192x192",
+            purpose: "any",
             type: "image/png",
           },
         ],
@@ -167,10 +152,5 @@ export default hopeTheme({
         ],
       },
     },
-  },
-
-  layout: {
-    // 启用右侧边栏
-    enableRightSidebar: true
   },
 });

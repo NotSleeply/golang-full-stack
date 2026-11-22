@@ -172,7 +172,7 @@ Dynamic格式将行记录分为两部分，分为是**行记录的额外信息**
 
 里面放的就是一行里，每一列的真正内容。除了我们建表时里涉及到的列以外，还有一些隐藏列。
 
-比如Row_ID，这个是在建表是没有声明主键时，数据表自动会生成的隐藏主键。另外还有`trx_id`字段，用于记录当前这一行数据行是被**哪个事务**修改的，和一个`roll_pointer`字段，这个字段是用来指向当前这个数据行的上一个版本，通过这个字段，可以为这行数据形成一条版本链，从而实现**多版本并发控制（MVCC）**。有没有很眼熟，这个在之前写的[文章](https://mp.weixin.qq.com/s/SR0ZL1zAc_0QIQvpDCOANw)里出现过。
+比如Row_ID，这个是在建表是没有声明主键时，数据表自动会生成的隐藏主键。另外还有`trx_id`字段，用于记录当前这一行数据行是被**哪个事务**修改的，和一个`roll_pointer`字段，这个字段是用来指向当前这个数据行的上一个版本，通过这个字段，可以为这行数据形成一条版本链，从而实现**多版本并发控制（MVCC）**。有没有很眼熟，这个在之前写的[文章](/中间件/mysql/核心知识点/都是select语句，为什么读到的内容不一样？.md)里出现过。
 
 ![隐藏列有哪些](https://cdn.xiaobaidebug.top/%E9%9A%90%E8%97%8F%E5%88%97%E6%9C%89%E5%93%AA%E4%BA%9B.drawio.png)
 
@@ -259,47 +259,11 @@ CREATE TABLE `test_max_length` (
 
 <br>
 
-## 最后
-
-最近原创更文的阅读量稳步下跌，思前想后，夜里辗转反侧。
-
-我有个不成熟的请求。
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162506224.png" alt="" style="zoom:20%;" />
-
-<br>
-
-**离开广东好长时间了，好久没人叫我靓仔了。**
-
-大家可以在**评论区**里，叫我一靓仔吗？
-
-我这么善良质朴的愿望，能被满足吗？
-
-如果实在叫不出口的话，能帮我点下右下角的**点赞和在看**吗？
-
-<br>
-
-##### 别说了，一起在知识的海洋里呛水吧
-
-关注公众号:【小白debug】
-![](https://cdn.xiaobaidebug.top/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88.png)
-
-<br>
-
-不满足于在留言区说骚话？
-
-加我，我们建了个划水吹牛皮群，在群里，你可以跟你下次跳槽可能遇到的同事或面试官聊点有意思的话题。就**超！开！心！**
-
-<img src="https://cdn.xiaobaidebug.top/image-20220522162616202.png" alt="" style="zoom:50%;" />
-
-![](https://cdn.xiaobaidebug.top/006APoFYly1g5q9gn2jipg308w08wqdi.gif)
-
-
 ## 文章推荐：
-- [golang进阶面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/2.Go%E8%BF%9B%E9%98%B6.html)
+- [golang进阶面试题八股文合集](/golang/面试题/2.Go进阶.md)
 
-- [golang基础面试题八股文合集](https://golangguide.top/golang/%E9%9D%A2%E8%AF%95%E9%A2%98/1.Go%E5%85%A5%E9%97%A8.html)
+- [golang基础面试题八股文合集](/golang/面试题/1.Go入门.md)
 
-- [golang常用标准库第三方库大全](https://golangguide.top/golang/%E5%B8%B8%E7%94%A8%E5%8C%85%E5%A4%A7%E5%85%A8.html)
+- [golang常用标准库第三方库大全](/golang/常用包大全.md)
 
-- [golang学习路线](https://golangguide.top/golang/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html)
+- [golang学习路线](/golang/学习路线.md)
